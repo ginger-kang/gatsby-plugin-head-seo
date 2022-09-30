@@ -23,9 +23,9 @@ import { type GatsbyConfig } from 'gatsby';
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    siteUrl: 'https://my-hoempage.com',
+    siteUrl: 'https://my-homepage.com',
     title: 'My Homepage',
-    description: 'This is my hoempage',
+    description: 'This is my homepage',
   },
   plugins: [
     'gatsby-plugin-head-seo',
@@ -40,7 +40,7 @@ It automatically builds basic meta tags for title, description, and canonical ur
 ```tsx
 // in the page
 import { type HeadProps } from 'gatsby';
-import { HeadSeo } from 'gasby-plugin-head-seo/src';
+import { HeadSeo } from 'gatsby-plugin-head-seo/src';
 
 export function Head({ location }: HeadProps) {
   return (
@@ -54,7 +54,7 @@ You can overrides the passing properties.
 ```tsx
 // in the page
 import { type HeadProps } from 'gatsby';
-import { HeadSeo } from 'gasby-plugin-head-seo/src';
+import { HeadSeo } from 'gatsby-plugin-head-seo/src';
 
 export function Head({ location }: HeadProps) {
   return (
@@ -75,7 +75,7 @@ Twitter Card indirectly reference the Open Graph standard, so I recommend always
 ```tsx
 // in the page
 import { type HeadProps } from 'gatsby';
-import { HeadSeo, OpenGraph, TwitterCard, Facebook } from 'gasby-plugin-head-seo/src';
+import { HeadSeo, OpenGraph, TwitterCard, Facebook } from 'gatsby-plugin-head-seo/src';
 
 export function Head({ location }: HeadProps) {
   return (
@@ -114,7 +114,7 @@ There are utilities for [robots meta tags](https://developers.google.com/search/
 ```tsx
 // in the page
 import { type HeadProps } from 'gatsby';
-import { HeadSeo, Robots } from 'gasby-plugin-head-seo/src';
+import { HeadSeo, Robots } from 'gatsby-plugin-head-seo/src';
 
 export function Head({ location }: HeadProps) {
   return (
@@ -148,7 +148,7 @@ import {
 
   // extensions
   SocialProfileJsonLd, // Person or Organization
-} from 'gasby-plugin-head-seo/src/jsonld';
+} from 'gatsby-plugin-head-seo/src/jsonld';
 ```
 
 See [code](src/jsonld) for more detail.
